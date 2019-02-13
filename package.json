@@ -8,7 +8,8 @@
   "scripts": {
     "analyze": "webpack-bundle-analyzer ./stats.json",
     "build": "webpack --env production --progress",
-    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --open --hot --env development\""
+    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --open --hot --env development\"",
+    "deploy": "node deploy"
   },
   "repository": {
     "type": "git",
@@ -80,5 +81,7 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
